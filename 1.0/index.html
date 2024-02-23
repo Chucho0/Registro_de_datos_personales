@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./main.js"></script>
+  <link rel="preload" href="colordos.jpg" as="image">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="main.js" as="script">
+</head>
+
+<body>
+  <div class="alert" id="alert">
+    <h1></h1>
+  </div>
+  <section>
+    <div class="for">
+      <div class="Formulario">
+        <h1><b>Registrarse</b></h1>
+        <div class="espacios">
+          <label for="minombre"><b>Nombre</b></label>
+          <br />
+          <input type="text" placeholder="Digite sus nombres" id="minombre" />
+        </div>
+        <br />
+        <div class="espacios">
+          <label for="miapellido"><b>Apellido</b></label>
+          <br />
+          <input type="text" placeholder="Digite sus apellidos" id="miapellido" />
+        </div>
+        <br />
+        <div class="espacios">
+          <label for="identificacion"><b>Identificacion</b></label>
+          <select class="lista" name="identificacion" id="identificacion">
+            <option value="" disabled selected>Seleccione un tipo de identificación</option>
+            <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
+            <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+            <option value="Pasaporte">Pasaporte</option>
+            <option value="Licencia de Conduccion">Licencia de Conduccion</option>
+          </select>
+        </div>
+        <br />
+        <div class="espacios">
+          <label for="numeroidentificacion"><b>Numero de Identificacion</b></label>
+          <br />
+          <input type="text" placeholder="N° de documento" id="numeroidentificacion" />
+        </div>
+        <br />
+        <div class="espacios">
+          <label for="fechadenacimiento"><b>Fecha de Nacimiento</b></label>
+          <br />
+          <input type="date" id="fecha" />
+        </div>
+        <br />
+        <div class="espacios">
+          <label for="genero"><b>Genero</b></label>
+          <br />
+          <br />
+          <label for="">Masculino</label>
+          <input value="Masculino" type="radio" name="genero" id="genero" />
+          <br />
+          <label for="">Femenino</label>
+          <input value="Femenino" type="radio" name="genero" id="genero" />
+          <br />
+          <label for="">Otro</label>
+          <input value="Otro" type="radio" name="genero" id="genero" />
+          <br />
+          <label for="">Prefiero no decir</label>
+          <input value="Prefiero no decir" type="radio" name="genero" id="genero" />
+        </div>
+        <br />
+        <div class="espacios">
+          <label for="numerodetelefono"><b>Numero de Telefono</b></label>
+          <br />
+          <input type="text" placeholder="N° de telefono" id="numerodetelefono" />
+      </div>
+      <br />
+      <div class=" espacios">
+          <label for="correoeletronico"><b>Correo Electronico</b></label>
+          <br />
+          <input type="email" placeholder="Correo principal" id="correoeletronico" />
+        </div>
+        <br />
+        <div>
+          <button class="enviar" onclick="validar()">Enviar</button>
+        </div>
+      </div>
+      <div class="tabla">
+        <table class="tavla">
+          <thead>
+            <tr>
+              <th class="tabvla">Nombre</th>
+              <th class="tabvla">Apellido</th>
+              <th class="tabvla">Tipo de documento</th>
+              <th class="tabvla">Numero de indentificacion</th>
+              <th class="tabvla">Genero</th>
+              <th class="tabvla">Fecha de nacimiento</th>
+              <th class="tabvla">Telefono</th>
+              <th class="tabvla">Correo electronico</th>
+            </tr>
+          </thead>
+          <tbody id="tabla">
+          </tbody>
+        </table>
+      </div>
+</body>
+
+</html>
